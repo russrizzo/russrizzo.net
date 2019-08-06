@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html mlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<!--JULY 2019
+Site coded by Russ Rizzo
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carmex Lip Balm</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link href="images/favicon/giraffe.jpg" rel="shortcut icon" />
+        
+    </head>
+        <body style="background-color: #eeeeee;" > 
+
+            <h1 id="topintro" >
+
+                Carmex lip balm makes your lips feel so good.<br>
+
+                "YOU'LL WANT TO KISS EVERYTHING"
+
+            </h1><br>
+    
+    <h1 id="intro" >We'll takeover subway stations.</h1><br>
+    
+    <div id="video" >
+        <img src="images/carmex/subway.jpg" alt="subway ad" width="900" class="responsive">
+        <img src="images/carmex/subway2.jpg" alt="subway ad" width="900" class="responsive">
+    </div>
+    <h1 id="intro" >And subway cars.</h1><br>
+    
+    <div id="video" >   
+        <img src="images/carmex/subwaycar.jpg" alt="subway car" width="900" class="responsive">
+    </div>
+
+    <h1 id="intro" >And subway cards.</h1><br>
+    
+    <div id="video" >   
+        <img src="images/carmex/subwaycard.png" alt="subway card" width="900" class="responsive">
+    </div>
+
+    <h1 id="intro" >We'll put mannequins kissing objects above ground in those cities.</h1><br>
+    
+    <div id="video" >   
+        <img src="images/carmex/man1.jpg" alt="carmex kissing mannequins" width="900" class="responsive">
+        <img src="images/carmex/man2.jpg" alt="carmex kissing mannequins" width="900" class="responsive">
+    </div>
+
+    <h1 id="intro" >We'll takeover Times Square with a billboard and a bunch of free Carmex dispensers.</h1><br>
+    
+    <div id="video">    
+        <img src="images/carmex/times.jpg" alt="carmex kissing mannequins" width="900" class="responsive">
+        <img src="images/carmex/timesvending.jpg" alt="carmex kissing mannequins" width="900" class="responsive">
+    </div>
+
+    <h1 id="intro" >We'll put OOH reminders in city museums.</h1><br>
+    
+    <div id="video" >    
+        <img src="images/carmex/lacma2.jpg" alt="carmex x LACMA" width="900" class="responsive">
+        <img src="images/carmex/lacma1.jpg" alt="please do not kiss the exhibits" width="900" class="responsive">
+    <div id="video" >
+
+</div>
+</div>
+
+    <h3 id="paragraph" >
+
+                CW / Russ Rizzo<br>
+
+                AD / <a href="https://caseyphillips.work/" target="_blank">Casey Phillips<span><img src="images/hover/people/casey-phillips.jpg" height="400px" /></span></a><br>
+
+                (VCU Brandcenter student work)
+
+    </h3>
+
+        <hr size=2px color="#000000" width="100%">
+
+            <h4 id="paragraph" >
+
+                <a href="little-caesars-hot-n-ready.html" >Little Caesars HOT-N-READY<span><img src="images/hover/projects/hot-n-ready.jpg" width="450px" /></span></a><br>
+
+                <a href="little-caesars-quattro.html" >Little Caesars Quattro<span><img src="images/hover/projects/quattro.jpg" width="450px" /></span></a><br>
+
+                <a href="little-caesars-extramostbestest-stuffed-crust.html" >Little Caesars ExtraMostBestest Stuffed Crust<span><img src="images/hover/projects/stuffed-crust.jpg" width="450px" /></span></a><br>
+
+                <a href="minnesota-wild.html" >Minnesota Wild<span><img src="images/hover/projects/wild.jpg" width="450px" /></span></a><br>
+
+                <img src="images/hover/projects/carmex.jpg" height="15px" /> <a href="carmex-lip-balm.html" class="active" >Carmex Lip Balm</a><br>
+
+                <a href="side-project-generator.html" >Side Project Generator<span><img src="images/hover/projects/spg.jpg" width="450px" /></span></a><br>
+
+                <a href="are-you-eating-dinner-with-your-father.html" >Are you eating dinner with your father?<span><img src="images/hover/projects/father.jpg" width="450px" /></span></a><br>
+
+                <a href="game-of-hands.html" >Game of Hands<span><img src="images/hover/projects/hands.jpg" width="450px" /></span></a>
+
+            </h4>
+
+            <h4 class="home" id="intro" >
+
+                <a class="homelink" href="index.html" >Back to Home Page</a>
+
+            </h4>
+</body>
+
+<!--JQUERY-->
+
+            <script type="text/javascript">
+                    
+    "use strict";
+
+        $("#paragraph a span").hide();
+        $('#paragraph a').mousemove(function(e) { 
+            $(this).find("span").stop(1, 1).fadeIn();
+            $("#paragraph a span").offset({
+                top: e.pageY - ($("#paragraph a span").outerHeight()/2),
+                left: e.pageX - ($("#paragraph a span").outerWidth()/2)
+            });
+        }).mouseleave(function() {
+            $("#paragraph a span").fadeOut();
+        }); 
+
+    </script>
+</html>

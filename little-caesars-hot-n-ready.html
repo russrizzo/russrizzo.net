@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html mlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<!--JULY 2019
+Site coded by Russ Rizzo
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Caesars HOT-N-READY Pizza</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link href="images/favicon/giraffe.jpg" rel="shortcut icon" />
+        
+    </head>
+        <body style="background-color: #eeeeee;" >
+
+            <h1 id="topintro" >
+
+                Little Caesars having a pizza hot and ready for you is a certainty of life.<br>
+
+                "TAXES"</h1><br>
+
+        <div id="video" >
+
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/349882678?color=000000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>
+
+            <h1 id="intro" >
+
+                How does Little Caesars always have a pizza hot and ready for you?<br>
+            
+                "GET OUT"</h1><br>
+
+        <div id="video" >
+
+			<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/349882998?color=000000&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        </div>
+
+        <h3 id="paragraph" >
+
+                CW / Russ Rizzo<br>
+
+                AD / <a href="https://caseyphillips.work/" target="_blank">Casey Phillips<span><img src="images/hover/people/casey-phillips.jpg"  height="400px" /></span></a><br>
+
+                CD / <a href="https://kasiacanning.com/" target="_blank">Kasia Canning<span><img src="images/hover/people/kasia-canning.jpg" height="320px" /></span></a><br>
+
+                CCO / <a href="http://bartonfgraf.com/" target="_blank">Gerry Graf<span><img src="images/hover/people/gerry-graf.jpg"  height="300px" /></span></a>
+            </h3>
+
+        <hr size=2px color="#000000" width="100%">
+
+            <h4 id="paragraph" >
+
+                <img src="images/hover/projects/hot-n-ready.jpg" height="15px" /> <a href="little-caesars-hot-n-ready.html" class="active" >Little Caesars HOT-N-READY</a><br>
+
+                <a href="little-caesars-quattro.html" >Little Caesars Quattro<span><img src="images/hover/projects/quattro.jpg" width="450px" /></span></a><br>
+
+                <a href="little-caesars-extramostbestest-stuffed-crust.html" >Little Caesars ExtraMostBestest Stuffed Crust<span><img src="images/hover/projects/stuffed-crust.jpg" width="450px" /></span></a><br>
+
+                <a href="minnesota-wild.html" >Minnesota Wild<span><img src="images/hover/projects/wild.jpg" width="450px" /></span></a><br>
+
+                <a href="carmex-lip-balm.html" >Carmex Lip Balm<span><img src="images/hover/projects/carmex.jpg" width="450px" /></span></a><br>
+
+                <a href="side-project-generator.html" >Side Project Generator<span><img src="images/hover/projects/spg.jpg" width="450px" /></span></a><br>
+
+                <a href="are-you-eating-dinner-with-your-father.html" >Are you eating dinner with your father?<span><img src="images/hover/projects/father.jpg" width="450px" /></span></a><br>
+
+                <a href="game-of-hands.html" >Game of Hands<span><img src="images/hover/projects/hands.jpg" width="450px" /></span></a>
+
+            </h4>
+
+            <h4 class="home" id="intro" >
+
+                <a class="homelink" href="index.html" >Back to Home Page</a>
+
+            </h4>
+</body>
+
+<!--JQUERY-->
+
+            <script type="text/javascript">
+                    
+    "use strict";
+
+        $("#paragraph a span").hide();
+        $('#paragraph a').mousemove(function(e) { 
+            $(this).find("span").stop(1, 1).fadeIn();
+            $("#paragraph a span").offset({
+                top: e.pageY - ($("#paragraph a span").outerHeight()/2),
+                left: e.pageX - ($("#paragraph a span").outerWidth()/2)
+            });
+        }).mouseleave(function() {
+            $("#paragraph a span").fadeOut();
+        }); 
+
+    </script>
+</html>

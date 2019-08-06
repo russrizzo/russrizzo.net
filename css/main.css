@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+  font: inherit;
+  text-align: left;
+  cursor: url('../images/cursor/arrow.png'), default;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+        p {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 2em;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color:#000000;
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 2em;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color:#000000;
+        }
+
+        h3 {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 2em;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color:#000000;
+        }
+
+        h4 {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 2em;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color:#000000;
+        }
+
+        a:link {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            text-decoration: none !important;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        a:visited {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            text-decoration: none;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        a:hover {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            text-decoration: none;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        a.homelink:link {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            text-decoration: none !important;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        a.homelink:visited {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            text-decoration: none;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        a.homelink:hover {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            background-color: #000000;
+            color: #eeeeee;
+            border-bottom: 2px solid #000000;
+            text-decoration: none;
+            cursor: url('../images/cursor/arrow.png'), default;
+            letter-spacing: 0px;
+        }
+
+        .active {
+            border-bottom: 0px solid #000000 !important;
+        }
+
+        .home {
+            transform: rotate(90deg);
+            transform-origin: right top 0;
+            text-align: right !important;
+        }
+
+        .vid-container {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+        }
+           
+        /* 16x9 Aspect Ratio */
+        .vid-container-16x9 {
+            padding-bottom: 56.25%;
+        }
+           
+        /* 4x3 Aspect Ratio */
+        .vid-container-4x3 {
+            padding-bottom: 75%;
+        }
+           
+        .vid-container iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            border-style: none;
+        }
+
+        .responsive {
+            max-width: 100%; 
+        }
+
+        #intro {
+            margin-top:0px;
+            margin-bottom:0px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto; 
+        }
+
+        #topintro {
+            margin-top:50px;
+            margin-bottom:0px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto; 
+        }
+
+        #video {
+            margin-top:0px;
+            margin-bottom:50px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto; 
+        }
+
+        #paragraph {
+            margin-top:50px;
+            margin-bottom:50px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #paragraph a span {
+            position: absolute;
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+    	
+    	p {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 2em;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color:#000000;
+        }

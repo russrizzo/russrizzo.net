@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html mlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<!--JULY 2019
+Site coded by Russ Rizzo
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Caesars Quattro</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link href="images/favicon/giraffe.jpg" rel="shortcut icon" />
+</head>
+        
+        <body style="background-color: #eeeeee;" > 
+        
+        <div class=project>
+
+            <h1 id="topintro" >
+
+            Little Caesars Quattro is perfect for people who disagree on pizza.<br>
+
+            "SHOES"</h1><br>
+
+            <h1 id="intro" >
+
+            The Quattro pizza has something for everyone, even people society forgets about.<br>
+
+            "ME"</h1><br>
+
+            <h1 id="intro" >
+
+            4 pizzas in 1 means everyone can finally get what they want.<br>
+
+            "GET WHAT YOU WANT" Radio</h1><br>
+
+            <h1 id="intro" >
+
+            The word Quattro is Italian, and not everyone speaks Italian.<br>
+
+            "FOUR" Pre-Roll</h1><br>
+
+            <h3 id="paragraph" >
+
+                CW / Russ Rizzo<br>
+
+                AD / <a href="https://caseyphillips.work/" target="_blank">Casey Phillips<span><img src="images/hover/people/casey-phillips.jpg"/></span></a><br>
+
+                CD / <a href="https://kasiacanning.com/" target="_blank">Kasia Canning<span><img src="images/hover/people/kasia-canning.jpg"/></span></a><br>
+
+                CCO / <a href="http://bartonfgraf.com/" target="_blank">Gerry Graf<span><img src="images/hover/people/gerry-graf.jpg"/></span></a>
+            </h3>
+
+        <hr size=2px color="#000000" width="100%">
+
+            <h4 id="paragraph" >
+
+                <a href="little-caesars-hot-n-ready.html" >Little Caesars HOT-N-READY<span><img src="images/hover/projects/hot-n-ready.jpg" width="450px" /></span></a><br>
+
+                <img src="images/hover/projects/quattro.jpg" height="15px" /> <a href="little-caesars-quattro.html" class="active" >Little Caesars Quattro</a><br>
+
+                <a href="little-caesars-extramostbestest-stuffed-crust.html" >Little Caesars ExtraMostBestest Stuffed Crust<span><img src="images/hover/projects/stuffed-crust.jpg" width="450px" /></span></a><br>
+
+                <a href="minnesota-wild.html" >Minnesota Wild<span><img src="images/hover/projects/wild.jpg" width="450px" /></span></a><br>
+
+                <a href="carmex-lip-balm.html" >Carmex Lip Balm<span><img src="images/hover/projects/carmex.jpg" width="450px" /></span></a><br>
+
+                <a href="side-project-generator.html" >Side Project Generator<span><img src="images/hover/projects/spg.jpg" width="450px" /></span></a><br>
+
+                <a href="are-you-eating-dinner-with-your-father.html" >Are you eating dinner with your father?<span><img src="images/hover/projects/father.jpg" width="450px" /></span></a><br>
+
+                <a href="game-of-hands.html" >Game of Hands<span><img src="images/hover/projects/hands.jpg" width="450px" /></span></a>
+
+            </h4>
+
+            <h4 class="home" id="intro">
+
+                <a href="index.html" >BACK TO HOME PAGE<span><img src="images/hover/other/home.jpg" width="450px" /></span></a>
+
+            </h4>
+</div>
+</body>
+
+<!--JQUERY-->
+
+            <script type="text/javascript">
+                    
+    "use strict";
+
+        $("#paragraph a span").hide();
+        $('#paragraph a').mousemove(function(e) { 
+            $(this).find("span").stop(1, 1).fadeIn();
+            $("#paragraph a span").offset({
+                top: e.pageY - ($("#paragraph a span").outerHeight()/2),
+                left: e.pageX - ($("#paragraph a span").outerWidth()/2)
+            });
+        }).mouseleave(function() {
+            $("#paragraph a span").fadeOut();
+        }); 
+
+    </script>
+</html>

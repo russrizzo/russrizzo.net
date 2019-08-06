@@ -1,0 +1,32 @@
+{
+  "name": "chug",
+  "version": "0.0.0-1",
+  "description": "Gulp Starter Pack",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gory/chug.git"
+  },
+  "keywords": [
+    "starter-pack"
+  ],
+  "author": "@gory",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/gory/chug/issues"
+  },
+  "homepage": "https://github.com/gory/chug#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
+}

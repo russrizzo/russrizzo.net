@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html mlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<!--JULY 2019
+Site coded by Russ Rizzo
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game of Hands</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link href="images/favicon/giraffe.jpg" rel="shortcut icon" />
+        
+    </head>
+        <body style="background-color: #eeeeee;" >
+	   
+        <h1 id="topintro" >
+
+        <a href="http://gameofhands.net" target="_blank" >Game of Hands</a> is an internet game that measures your NHL knowledge based on whether you know if a player shoots left-handed or right-handed.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/home.jpg" alt="game of hands" width="700" class="responsive"><br>
+        <img src="images/goh/play.jpg" alt="game of hands" width="700" class="responsive">
+    </div>
+
+    <h1 id="intro" > The game received great feedback.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/feedback.png" alt="feedback" height="248" width="700" class="responsive">
+    </div>
+
+    <h1 id="intro" >So I mailed letters to challenge hockey analysts at ESPN and NHL Network.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/barrymelrose.png" alt="barry melrose" width="700" class="responsive"><br>
+        <img src="images/goh/johnbuccigross.png" alt="john buccigross" width="700" class="responsive"><br>
+        <img src="images/goh/martybiron.png" alt="marty biron" width="700" class="responsive"><br>
+        <img src="images/goh/mikejohnson.png" alt="mike johnson" width="700" class="responsive"><br>
+        <img src="images/goh/ejhradek.png" alt="ej hradek" width="700" class="responsive"><br>
+        <img src="images/goh/kathryntappen.png" alt="kathryn tappyn" width="700" class="responsive"><br>
+        <img src="images/goh/kevinweekes.png" alt="kevin weekes" width="700" class="responsive">
+    </div>
+
+    <h1 id="intro" >Following <a href="https://twitter.com/gameofhands" target="_blank" >@GameofHands</a> on Twitter will improve your score.</h1><br>
+
+    <div id="video" >
+        <a class="twitter-timeline" height="600px" width="400" href="https://twitter.com/gameofhands?ref_src=twsrc%5Etfw">Hands by @gameofhands</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <h1 id="intro" >You can also win beer.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/free_beer.png" alt="how to win free beer" height="700" class="responsive">
+    </div>
+
+    <h1 id="intro" >This is the fine print.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/fine_print.png" alt="fine print" height="700" class="responsive">
+    </div>
+
+    <h1 id="intro" >This is my high score.</h1><br>
+
+    <div id="video" >
+        <img src="images/goh/high_score.jpg" alt="russ high score" height="700" class="responsive">
+    </div>
+</div>
+    <h3 id="paragraph" >Dev / Alex Nelson</h3>
+
+<hr size=2px color="#000000" width="100%">
+
+            <h4 id="paragraph" >
+
+                <a href="little-caesars-hot-n-ready.html" >Little Caesars HOT-N-READY<span><img src="images/hover/projects/hot-n-ready.jpg" width="450px" /></span></a><br>
+
+                <a href="little-caesars-quattro.html" >Little Caesars Quattro<span><img src="images/hover/projects/quattro.jpg" width="450px" /></span></a><br>
+
+                <a href="little-caesars-extramostbestest-stuffed-crust.html" >Little Caesars ExtraMostBestest Stuffed Crust<span><img src="images/hover/projects/stuffed-crust.jpg" width="450px" /></span></a><br>
+
+                <a href="minnesota-wild.html" >Minnesota Wild<span><img src="images/hover/projects/wild.jpg" width="450px" /></span></a><br>
+
+                <a href="carmex-lip-balm.html" >Carmex Lip Balm<span><img src="images/hover/projects/carmex.jpg" width="450px" /></span></a><br>
+
+                <a href="side-project-generator.html" >Side Project Generator<span><img src="images/hover/projects/spg.jpg" width="450px" /></span></a><br>
+
+                <a href="are-you-eating-dinner-with-your-father.html" >Are you eating dinner with your father?<span><img src="images/hover/projects/father.jpg" width="450px" /></span></a><br>
+
+                <img src="images/hover/projects/hands.jpg"/ height="15px" > <a href="game-of-hands.html" class="active" >Game of Hands</a>
+
+            </h4>
+
+            <h4 class="home" id="intro" >
+
+                <a class="homelink" href="index.html" >Back to Home Page</a>
+
+            </h4>
+</body>
+
+<!--JQUERY-->
+
+            <script type="text/javascript">
+                    
+    "use strict";
+
+        $("#paragraph a span").hide();
+        $('#paragraph a').mousemove(function(e) { 
+            $(this).find("span").stop(1, 1).fadeIn();
+            $("#paragraph a span").offset({
+                top: e.pageY - ($("#paragraph a span").outerHeight()/2),
+                left: e.pageX - ($("#paragraph a span").outerWidth()/2)
+            });
+        }).mouseleave(function() {
+            $("#paragraph a span").fadeOut();
+        }); 
+
+    </script>
+</html>

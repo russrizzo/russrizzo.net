@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html mlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" class="no-js">
+<!--JULY 2019
+Site coded by Russ Rizzo
+-->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>russrizzo.net</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/head.built.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/main.built.js" type="text/javascript" charset="utf-8"></script>
+        <link href="images/favicon/giraffe.jpg" rel="shortcut icon" />
+        
+	</head>
+    	<body style="background-color: #eeeeee;" > 
+        <div>
+			<p id="paragraph">
+				Russ Rizzo is a copywriter at Barton F. Graf in New York City. There, he's made pizza commercials for the <a href="little-caesars-hot-n-ready.html" >Little Caesars HOT-N-READY<span><img src="images/hover/projects/hot-n-ready.jpg" width="450px" /></span></a>, the <a href="little-caesars-extramostbestest-stuffed-crust.html" width="450px" >Little Caesars ExtraMostBestest Stuffed Crust<span><img src="images/hover/projects/stuffed-crust.jpg" width="450px" /></span></a>, and the <a href="little-caesars-quattro.html" >Little Caesars Quattro<span><img src="images/hover/projects/quattro.jpg" width="450px" /></span></a>. Prior to BFG, Russ helped create the 2017-18 campaign for the NHL's <a href="minnesota-wild.html" >Minnesota Wild<span><img src="images/hover/projects/wild.jpg" width="450px" /></span></a>. And a VCU Brandcenter student campaign for <a href="carmex-lip-balm.html" width="450px" >Carmex Lip Balm<span><img src="images/hover/projects/carmex.jpg" width="450px" /></span></a>. And a side project to generate ideas for side projects called <a href="side-project-generator.html" >Side Project Generator<span><img src="images/hover/projects/spg.jpg" width="450px" /></span></a>. And a website inspired by his father called <a href="are-you-eating-dinner-with-your-father.html" >Are you eating dinner with your father?<span><img src="images/hover/projects/father.jpg" width="450px" /></span></a> And an online game about NHL players called <a href="game-of-hands.html" >Game of Hands<span><img src="images/hover/projects/hands.jpg" width="450px" /></span></a>. Russ grew up playing competitive hockey in Buffalo, New York. He's gone unselected in the NHL Draft for 11 consecutive years, and is now playing advertising in New York City. Contact him at russellmrizzo@gmail.com, or view his current <a href="files/russ-rizzo-info-sheet.pdf" target="_blank" >info sheet<span><img src="images/hover/other/info-sheet.jpg" width="300px" /></span></a>.</p>
+
+                <br><br><br><br><br>
+        </div>
+        </body>
+
+<!--JQUERY-->    
+
+            <script type="text/javascript">
+                    
+    "use strict";
+
+        $("#paragraph a span").hide();
+        $('#paragraph a').mousemove(function(e) { 
+            $(this).find("span").stop(1, 1).fadeIn();
+            $("#paragraph a span").offset({
+                top: e.pageY - ($("#paragraph a span").outerHeight()/2),
+                left: e.pageX - ($("#paragraph a span").outerWidth()/2)
+            });
+        }).mouseleave(function() {
+            $("#paragraph a span").fadeOut();
+        });
+
+    </script>
+</html>
